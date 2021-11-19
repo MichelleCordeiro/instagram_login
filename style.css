@@ -11,18 +11,19 @@ body {
   width: 100%;
   min-height: 100vh;
   background-color: rgb(243, 243, 243);
-  padding: 0;
   margin: 0;
-  display: flex;
-  justify-content: center;
+  padding: 0;
+  display: block;
 }
 
 .instagram-wrapper {
   display: flex;
+  margin: 0 auto;
   align-items: center;
   justify-content: start;
-  width: 60%;
-  height: 100vh;
+  width: 100%;
+  max-width: 60rem;
+  height: 80vh;
 }
 
 .instagram-left {
@@ -33,7 +34,7 @@ body {
 }
 
 .instagram-left img {
-  height: 50rem;
+  height: 43rem;
 }
 
 .instagram-right {
@@ -53,15 +54,17 @@ body {
   background-color: #ffffff;
   width: 100%;
   padding: 1.3rem 0;
+  margin-bottom: 0.8rem;
   border: 1px solid lightgray;
 }
 
 .group:nth-child(1) {
-  min-height: 19rem;
+  min-height: 22rem;
 }
 
 .instagram-logo {
-  height: 3rem;
+  height: 3.5rem;
+  margin: 1rem 0;
 }
 
 .profile-photo {
@@ -108,7 +111,7 @@ body {
 .download {
   display: flex;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   padding: 1rem;
 }
@@ -118,6 +121,7 @@ body {
   width: 10rem;
   background-size: cover;
   border-radius: 5px;
+  margin: 0 0.5rem;
 }
 
 .app-download:nth-child(1) {
@@ -128,13 +132,49 @@ body {
   background-image: url('./img/googleplay-button.png');
 }
 
+footer {
+  padding: 0 1rem 3.25rem 1rem;
+}
+
+.lines {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 0.5rem;
+}
+
+.lines a {
+  color: #8e8e8e;
+  padding: 0 0.5rem;
+  line-height: 1.5rem;
+  font-size: 12px;
+}
+
+.infos {
+  display: flex;
+  padding: 1rem 0;
+  justify-content: center;
+  color: #8e8e8e;
+}
+
+#language > select {
+  background-color: transparent;
+  border: none;
+  font-size: 12px;
+}
+
+#line-infos span {
+  margin-left: 1rem;
+  font-size: 12px;
+}
+
 @media (max-widht: 1024px) {
   .instagram-wrapper {
     width: 90%;
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 874px) {
   body {
     background-color: #ffffff;
   }
@@ -147,11 +187,11 @@ body {
     width: 90%;
   }
 
-  .instagram-phone {
+  .instagram-left {
     display: none;
   }
 
-  .instagram-continue {
+  .instagram-right {
     width: 100%;
   }
 }
